@@ -1,4 +1,7 @@
 import Head from 'next/head'
+import SwiperCore, { Navigation, Pagination } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
 import {
   Box,
   Center,
@@ -12,6 +15,8 @@ import {
 import { Header } from '../components/Header'
 import { HomeBanner } from '../components/HomeBanner'
 
+SwiperCore.use([Navigation, Pagination])
+
 export default function Home() {
   return (
     <div>
@@ -19,7 +24,7 @@ export default function Home() {
         <title>Home | Worldtrip</title>
       </Head>
 
-      <Flex direction="column" h="100vh">
+      <Flex direction="column">
         <Header />
         <HomeBanner />
         <Flex
@@ -32,7 +37,7 @@ export default function Home() {
         >
           <SimpleGrid
             flex="1"
-            gap="4"
+            gap="16"
             minChildWidth="158px"
             align="flex-start"
             mt="32"
@@ -98,7 +103,188 @@ export default function Home() {
               <Text>Então escolha seu continente</Text>
             </Heading>
 
-            <Box w="90%" maxWidth={1240} h={450} bg="gray.900"></Box>
+            <Box width="90%" h={450} maxWidth={1240}>
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                loop={true}
+                navigation
+                pagination={{ clickable: true }}
+              >
+                <SwiperSlide>
+                  <Box
+                    width="100%"
+                    h={450}
+                    bg="gray.900"
+                    pos="relative"
+                    zIndex="1"
+                  >
+                    <Image
+                      src="./europe.jpg"
+                      pos="absolute"
+                      width="100%"
+                      height="100%"
+                      objectFit="cover"
+                      zIndex="-1"
+                    />
+
+                    <Flex
+                      direction="column"
+                      w="100%"
+                      h="100%"
+                      align="center"
+                      justify="center"
+                    >
+                      <Heading
+                        color="gray.50"
+                        fontWeight="bold"
+                        size="2xl"
+                        mb="4"
+                      >
+                        Europa
+                      </Heading>
+                      <Text
+                        as="span"
+                        color="gray.100"
+                        fontWeight="bold"
+                        fontSize="2xl"
+                      >
+                        o continente mais antigo.
+                      </Text>
+                    </Flex>
+                  </Box>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Box
+                    width="100%"
+                    h={450}
+                    bg="gray.900"
+                    pos="relative"
+                    zIndex="1"
+                  >
+                    <Image
+                      src="./europe.jpg"
+                      pos="absolute"
+                      width="100%"
+                      height="100%"
+                      objectFit="cover"
+                      zIndex="-1"
+                    />
+
+                    <Flex
+                      direction="column"
+                      w="100%"
+                      h="100%"
+                      align="center"
+                      justify="center"
+                    >
+                      <Heading
+                        color="gray.50"
+                        fontWeight="bold"
+                        size="2xl"
+                        mb="4"
+                      >
+                        Europa
+                      </Heading>
+                      <Text
+                        as="span"
+                        color="gray.100"
+                        fontWeight="bold"
+                        fontSize="2xl"
+                      >
+                        o continente mais antigo.
+                      </Text>
+                    </Flex>
+                  </Box>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Box
+                    width="100%"
+                    h={450}
+                    bg="gray.900"
+                    pos="relative"
+                    zIndex="1"
+                  >
+                    <Image
+                      src="./europe.jpg"
+                      pos="absolute"
+                      width="100%"
+                      height="100%"
+                      objectFit="cover"
+                      zIndex="-1"
+                    />
+
+                    <Flex
+                      direction="column"
+                      w="100%"
+                      h="100%"
+                      align="center"
+                      justify="center"
+                    >
+                      <Heading
+                        color="gray.50"
+                        fontWeight="bold"
+                        size="2xl"
+                        mb="4"
+                      >
+                        Europa
+                      </Heading>
+                      <Text
+                        as="span"
+                        color="gray.100"
+                        fontWeight="bold"
+                        fontSize="2xl"
+                      >
+                        o continente mais antigo.
+                      </Text>
+                    </Flex>
+                  </Box>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Box
+                    width="100%"
+                    h={450}
+                    bg="gray.900"
+                    pos="relative"
+                    zIndex="1"
+                  >
+                    <Image
+                      src="./europe.jpg"
+                      pos="absolute"
+                      width="100%"
+                      height="100%"
+                      objectFit="cover"
+                      zIndex="-1"
+                    />
+
+                    <Flex
+                      direction="column"
+                      w="100%"
+                      h="100%"
+                      align="center"
+                      justify="center"
+                    >
+                      <Heading
+                        color="gray.50"
+                        fontWeight="bold"
+                        size="2xl"
+                        mb="4"
+                      >
+                        Europa
+                      </Heading>
+                      <Text
+                        as="span"
+                        color="gray.100"
+                        fontWeight="bold"
+                        fontSize="2xl"
+                      >
+                        o continente mais antigo.
+                      </Text>
+                    </Flex>
+                  </Box>
+                </SwiperSlide>
+              </Swiper>
+            </Box>
           </Flex>
         </Flex>
       </Flex>
