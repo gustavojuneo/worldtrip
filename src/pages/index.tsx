@@ -4,6 +4,7 @@ import {
   Center,
   Divider,
   Flex,
+  Heading,
   Image,
   SimpleGrid,
   Text
@@ -27,7 +28,7 @@ export default function Home() {
           w="100%"
           maxWidth={1440}
           mx="auto"
-          mt="8"
+          py="8"
         >
           <SimpleGrid
             flex="1"
@@ -84,6 +85,21 @@ export default function Home() {
               maxWidth={90}
             />
           </Center>
+
+          <Flex direction="column" w="100%" align="center" justify="center">
+            <Heading
+              textAlign="center"
+              fontWeight="medium"
+              lineHeight="tall"
+              size="xl"
+              mb="16"
+            >
+              Vamos nessa?
+              <Text>Então escolha seu continente</Text>
+            </Heading>
+
+            <Box w="90%" maxWidth={1240} h={450} bg="gray.900"></Box>
+          </Flex>
         </Flex>
       </Flex>
     </div>
