@@ -17,7 +17,7 @@ export function Banner() {
   return (
     <Box w="100%" h={335} pos="relative">
       <Image
-        src="./background.png"
+        src="/background.png"
         w="100%"
         h="100%"
         pos="absolute"
@@ -45,7 +45,7 @@ export function Banner() {
             </Text>
           </Stack>
         </Box>
-        {isWideVersion && <Image src="./airplane.svg" mt="32" />}
+        {isWideVersion && <Image src="/airplane.svg" mt="32" />}
       </Flex>
     </Box>
   )

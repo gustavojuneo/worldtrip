@@ -14,7 +14,7 @@ export function Feature({ icon, text }: FeatureProps) {
   return (
     <Flex direction={['row', 'column']} align="center" justify="center">
       {isMobile ? (
-        <Image src={`./icons/${icon}.svg`} alt={text} h="85" mb="6" />
+        <Image src={`/icons/${icon}.svg`} alt={text} h="85" mb="6" />
       ) : (
         <Text color="yelow.500" mr="2">
           •

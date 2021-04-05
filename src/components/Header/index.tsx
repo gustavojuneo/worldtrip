@@ -10,7 +10,7 @@ export function Header() {
     <Flex
       as="header"
       w="100%"
-      maxW={1440}
+      maxW={1160}
       h={['50px', '100px']}
       mx="auto"
       align="center"
@@ -19,7 +19,6 @@ export function Header() {
     >
       <Grid
         w="100%"
-        maxW={1440}
         h="100%"
         mx="auto"
         alignItems="center"
@@ -34,12 +33,12 @@ export function Header() {
             variant="unstyled"
             fontSize="24"
             justifySelf="start"
-            onClick={back}
+            onClick={() => back()}
           />
         )}
 
         <Link justifySelf="center" gridColumn="2">
-          <Image src="./logo.svg" alt="Worldtrip" />
+          <Image src="/logo.svg" alt="Worldtrip" />
         </Link>
       </Grid>
     </Flex>

@@ -1,14 +1,6 @@
 import Head from 'next/head'
-import {
-  Center,
-  Divider,
-  Flex,
-  Heading,
-  Image,
-  SimpleGrid,
-  Text
-} from '@chakra-ui/react'
-import { Header } from '../components/Header'
+import { Flex, Heading, Text } from '@chakra-ui/react'
+
 import { Banner } from '../components/Banner'
 import { Slide } from '../components/Slide'
 import { Features } from '../components/Features'
